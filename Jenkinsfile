@@ -1,10 +1,10 @@
 pipeline {
     agent any
     stages {
-        stage('Build Program'){
+        stage('Build'){
             steps {
-                echo "Executing Makefile"
-                sh "make"
+                sh 'make'
+                sh './a.out'
             }
         }
     }
